@@ -299,91 +299,126 @@ a.scroll-to:hover {
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 1024px) {
-
+    /* Ajuste general del body */
     body {
-        font-size: 18px;
-        line-height: 1.6;
+        font-size: 16px;
+        line-height: 1.5;
         margin: 0;
         padding: 0;
     }
 
     h1, h2, h3 {
-        font-size: 22px;
-        margin-bottom: 15px;
+        font-size: 20px;
+        margin-bottom: 10px;
         text-align: center;
     }
 
     .container {
         padding: 10px;
         margin: 0 auto;
-        max-width: 95%;
+        max-width: 100%;
     }
 
-    /* Menú desplegable */
+    /* Ajustes del menú */
     nav {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        background-color: #333;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0;
     }
 
     nav a {
-        display: block;
-        padding: 10px;
-        font-size: 18px;
-        color: white;
+        font-size: 16px;
+        padding: 8px 10px;
         text-decoration: none;
-        border-bottom: 1px solid #444; 
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+        flex: 1 1 45%;
     }
 
     nav a:hover {
-        background-color: #444;
-    }
-
-    .menu-button {
-        display: block;
-        background-color: #333;
-        color: white;
-        border: none;
-        padding: 10px;
-        font-size: 18px;
-        cursor: pointer;
-        width: 100%;
-        text-align: left;
+        background-color: #f0f0f0;
     }
 
     /* Cards */
     .card {
-        display: none; 
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 16px;
     }
 
-    footer {
-        text-align: center;
+    .card img {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    /* Sección de conocimientos */
+    .knowledge-section {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .knowledge-section h3 {
+        font-size: 18px; 
+        margin-bottom: 10px;
+    }
+
+    .knowledge-section p {
         font-size: 16px;
+        line-height: 1.4;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 14px;
+        text-align: center;
         padding: 10px;
         background-color: #333;
         color: white;
     }
 
-    button, input, textarea {
+    /* Botones */
+    button, .btn {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+    }
+
+    button:hover, .btn:hover {
+        background-color: #0056b3;
+    }
+
+    /* Inputs y formularios */
+    input, textarea {
         font-size: 16px;
         width: 100%;
         margin-bottom: 15px;
         padding: 10px;
-    }
-
-    .btn {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 10px;
-        font-size: 16px;
+        border: 1px solid #ccc;
         border-radius: 5px;
-        cursor: pointer;
     }
 
-    .btn:hover {
-        background-color: #0056b3;
+    /* Otros ajustes */
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .column {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
     }
 }
