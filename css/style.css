@@ -297,114 +297,93 @@ a.scroll-to:hover {
     transition: text-decoration 0.3s ease-in-out;
 }
 
-/* Estilos para móviles */
+/* Estilos para dispositivos móviles */
 @media (max-width: 1024px) {
-    * {
-        box-sizing: border-box;
-    }
 
     body {
+        font-size: 18px;
+        line-height: 1.6;
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        line-height: 1.5;
     }
 
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 15px;
-    }
-
-    header .logo {
-        font-size: 24px;
-        text-align: center;
+    h1, h2, h3 {
+        font-size: 22px;
         margin-bottom: 15px;
+        text-align: center;
     }
 
-    header nav ul {
+    .container {
+        padding: 10px;
+        margin: 0 auto;
+        max-width: 95%;
+    }
+
+    /* Menú desplegable */
+    nav {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 0;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #333;
     }
 
-    header nav ul li {
-        margin: 5px 0;
+    nav a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid #444; 
     }
 
-    header nav ul li a {
+    nav a:hover {
+        background-color: #444;
+    }
+
+    .menu-button {
+        display: block;
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* Cards */
+    .card {
+        display: none; 
+    }
+
+    footer {
+        text-align: center;
         font-size: 16px;
         padding: 10px;
-        display: block;
+        background-color: #333;
+        color: white;
     }
 
-    .hero {
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .hero .hero-content {
+    button, input, textarea {
+        font-size: 16px;
         width: 100%;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
-
-    .hero p {
-        font-size: 18px;
         margin-bottom: 15px;
-    }
-
-    .row {
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 0 15px;
-    }
-
-    .left, .right {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .card {
-        width: 100%;
-        margin: 10px 0;
-        padding: 15px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 10px;
     }
 
     .btn {
-        padding: 10px 20px;
-        font-size: 16px;
-        width: 100%;
-        text-align: center;
-    }
-
-    .third {
-        width: 100%;
-        margin: 10px 0;
-        padding: 10px;
-    }
-
-    .contact-form input, .contact-form textarea {
-        width: 100%;
-        margin: 10px 0;
+        background-color: #007bff;
+        color: white;
+        border: none;
         padding: 10px;
         font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
     }
 
-    .footer {
-        padding: 20px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
+    .btn:hover {
+        background-color: #0056b3;
     }
 }
