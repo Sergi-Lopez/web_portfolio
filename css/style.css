@@ -298,7 +298,7 @@ a.scroll-to:hover {
 }
 
 /* Estilos para móviles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     * {
         box-sizing: border-box;
     }
@@ -306,7 +306,8 @@ a.scroll-to:hover {
     body {
         margin: 0;
         padding: 0;
-        font-size: 14px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
         line-height: 1.5;
     }
 
@@ -317,7 +318,7 @@ a.scroll-to:hover {
     }
 
     header .logo {
-        font-size: 20px;
+        font-size: 24px;
         text-align: center;
         margin-bottom: 15px;
     }
@@ -333,7 +334,7 @@ a.scroll-to:hover {
     }
 
     header nav ul li a {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px;
         display: block;
     }
@@ -349,19 +350,19 @@ a.scroll-to:hover {
     }
 
     .hero h1 {
-        font-size: 24px;
+        font-size: 28px;
         margin-bottom: 10px;
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 15px;
     }
 
     .row {
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .left, .right {
@@ -373,14 +374,14 @@ a.scroll-to:hover {
         width: 100%;
         margin: 10px 0;
         padding: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .btn {
         padding: 10px 20px;
-        font-size: 14px;
+        font-size: 16px;
         width: 100%;
         text-align: center;
-        box-sizing: border-box;
     }
 
     .third {
@@ -393,12 +394,12 @@ a.scroll-to:hover {
         width: 100%;
         margin: 10px 0;
         padding: 10px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .footer {
         padding: 20px;
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
     }
 
