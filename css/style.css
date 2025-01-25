@@ -298,8 +298,8 @@ a.scroll-to:hover {
 }
 
 /* Estilos para dispositivos móviles */
-@media (max-width: 1024px) {
-    /* Ajustes generales */
+@media (max-width: 1200px) {
+
     body {
       font-size: 16px;
       line-height: 1.5;
@@ -307,9 +307,10 @@ a.scroll-to:hover {
       padding: 0;
     }
   
-    /* Ajustes de secciones y elementos */
+
     .hero {
-      flex-direction: column; /* Apila elementos en columna */
+      flex-direction: column;
+      text-align: center;
       padding: 20px;
     }
   
@@ -319,26 +320,23 @@ a.scroll-to:hover {
   
     .left, .right {
       width: 100%;
-      text-align: center;
-    }
-  
-    .right img {
-      max-width: 100%;
+      margin: 0 auto;
     }
   
     .card {
       width: 100%;
+      margin: 10px auto;
     }
   
     .row {
-      flex-direction: column; /* Apila elementos en columna */
+      flex-direction: column;
     }
   
     .third {
       width: 100%;
     }
   
-    /* Ajustes adicionales para una mejor visualización */
+
     .nav ul {
       flex-direction: column;
       align-items: center;
@@ -354,11 +352,11 @@ a.scroll-to:hover {
     }
   
     .social-links {
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row;
+      justify-content: center;
     }
   
-    /* Ajustes de tipografía y espaciado */
+
     h1, h2, h3 {
       font-size: 24px;
       margin-bottom: 10px;
@@ -373,4 +371,15 @@ a.scroll-to:hover {
       font-size: 18px;
       padding: 15px 20px;
     }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content {
+      padding: 10px;
+    }
+  
+    .card {
+      padding: 5px;
+    }
+    
   }
