@@ -299,126 +299,78 @@ a.scroll-to:hover {
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 1024px) {
-    /* Ajuste general del body */
+    /* Ajustes generales */
     body {
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 0;
-        padding: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
     }
-
-    h1, h2, h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
-        text-align: center;
+  
+    /* Ajustes de secciones y elementos */
+    .hero {
+      flex-direction: column; /* Apila elementos en columna */
+      padding: 20px;
     }
-
-    .container {
-        padding: 10px;
-        margin: 0 auto;
-        max-width: 100%;
+  
+    .hero-content {
+      width: 100%;
     }
-
-    /* Ajustes del menú */
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px 0;
+  
+    .left, .right {
+      width: 100%;
+      text-align: center;
     }
-
-    nav a {
-        font-size: 16px;
-        padding: 8px 10px;
-        text-decoration: none;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        text-align: center;
-        flex: 1 1 45%;
+  
+    .right img {
+      max-width: 100%;
     }
-
-    nav a:hover {
-        background-color: #f0f0f0;
-    }
-
-    /* Cards */
+  
     .card {
-        margin: 10px 0;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        font-size: 16px;
+      width: 100%;
     }
-
-    .card img {
-        max-width: 100%;
-        border-radius: 10px;
-    }
-
-    /* Sección de conocimientos */
-    .knowledge-section {
-        margin: 10px 0;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-    }
-
-    .knowledge-section h3 {
-        font-size: 18px; 
-        margin-bottom: 10px;
-    }
-
-    .knowledge-section p {
-        font-size: 16px;
-        line-height: 1.4;
-    }
-
-    /* Footer */
-    footer {
-        font-size: 14px;
-        text-align: center;
-        padding: 10px;
-        background-color: #333;
-        color: white;
-    }
-
-    /* Botones */
-    button, .btn {
-        font-size: 16px;
-        padding: 10px;
-        width: 100%;
-        margin: 10px 0;
-        border: none;
-        border-radius: 5px;
-        background-color: #007bff;
-        color: white;
-    }
-
-    button:hover, .btn:hover {
-        background-color: #0056b3;
-    }
-
-    /* Inputs y formularios */
-    input, textarea {
-        font-size: 16px;
-        width: 100%;
-        margin-bottom: 15px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    /* Otros ajustes */
+  
     .row {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+      flex-direction: column; /* Apila elementos en columna */
     }
-
-    .column {
-        flex: 1 1 100%;
-        margin-bottom: 10px;
+  
+    .third {
+      width: 100%;
     }
-}
+  
+    /* Ajustes adicionales para una mejor visualización */
+    .nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav li {
+      margin: 10px 0;
+    }
+  
+    .footer {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .social-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Ajustes de tipografía y espaciado */
+    h1, h2, h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  
+    .btn {
+      font-size: 18px;
+      padding: 15px 20px;
+    }
+  }
