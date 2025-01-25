@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sergi López</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="sticky">
+        <div class="logo">SERGI LÓPEZ</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="scroll-to">Inicio</a></li>
+                <li><a href="#estudiosyexperiencia" class="scroll-to">Estudios y experiencia</a></li>
+                <li><a href="#conocimientos" class="scroll-to">Conocimientos</a></li>
+                <li><a href="#proyectos" class="scroll-to">Proyectos</a></li>
+                <li><a href="#contacto" class="scroll-to">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <div class="hero">
+            <div class="hero-content">
+                <div class="left">
+                    <h1>Desarrollador de Software</h1>
+                    <h1>Sergi López</h1>
+                    <p>Conocimientos de Java, Python, SQL, MongoDB, HTML, CSS... Más detalles <a class="red" href="#conocimientos">aquí</a></p>
+                    <a href="#contacto" class="btn">Contáctame</a>
+                </div>
+                <div class="right">
+                    <img src="images/portfolio-imagen.png" alt="Imagen de Portfolio" width="600">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="estudiosyexperiencia" class="center coal first-section padded">
+        <div class="content">
+            <div class="row vert-pad">
+                <div class="left padded margin-right">
+                    <div class="card">
+                        <h1>Estudios</h1>
+                        <p>IES Historiador Chabás - Desarrollo de aplicaciones multiplataforma (2022-2024)</p>
+                        <p>UDEMY - Python sin fronteras: HTML, CSS, Flask y MySQL</p>
+                        <p>Certificaciones en OpenWebinars (Java, Python, MySQL) <a class="red" target="_blank" href="https://www.linkedin.com/in/sergilopezsanchez/details/certifications/">aquí</a></p>
+                    </div>
+                    <div class="card margin-top">
+                        <h1>Estudiando actualmente</h1>
+                        <p>Estoy ampliando mis conocimientos con Javascript, desarrollando aplicaciones en Python y Java para mi portfolio.</p>
+                    </div>
+                </div>
+                <div class="right padded card">
+                    <h1>Experiencia profesional</h1>
+                    <h3>Creama - Desarrollador Java</h3>
+                    <p>Spring: Desarrollo de API para comunicar una base de datos con un frontend. Uso de Spring para manejar seguridad y roles de acceso.</p>
+                    <p>MySQL: Bases de datos relacionales.</p>
+                    <p>Selenium: Automatización de datos de fuentes públicas con rutinas integradas en Java.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='conocimientos' class='center coal section vert-pad'>
+        <div class='content'>
+            <h1 class='padded'>Conocimientos en Programación y Herramientas</h1>
+            <div class="row hor-pad card">
+                <div class="more-margin-right">
+                    <h3>Lenguajes de Programación</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Kotlin (nivel básico)</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="more-margin-right">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>Spring</li>
+                        <li>Flask</li>
+                        <li>tkinter</li>
+                    </ul>
+                </div>
+                <div class="more-margin-right">
+                    <h3>Bases de Datos</h3>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Herramientas</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>Selenium</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section id='proyectos' class='center padded coal section padded'>
+        <div class='content padded'>
+            <div class='padded'>
+                <h1>Algunos proyectos desarrollados por mi cuenta</h1>
+            </div>
+            <div class='row'>
+                <div class='card third'>
+                    <h3>Portfolio</h3>
+                    <p>Esta misma pagina web, desarrollada completamente utilizando python con Flask y html y css. Además utiliza la api de Sendgrid para manejar los correos de contacto.</p>
+                    <a class='red' target='_blank' href='https://github.com/Sergi-Lopez/web'>Python</a>
+                </div>
+                <div class='card third'>
+                    <h3>Generador de contraseñas</h3>
+                    <p>Una aplicación para generar contraseñas con los elementos que el usuario marque en la interfaz gráfica (mayusculas, minusculas, simbolos, numeros...), también se ajusta a la longitud y en base a esto indica como de segura es.</p>
+                    <a class='red margin-right' target='_blank' href='https://github.com/Sergi-Lopez/passwordgenerator_python'>Python</a>
+                    <a class='red' target='_blank' href='https://github.com/Sergi-Lopez/passwordgenerator_java'>Java</a>
+                </div>
+                <div class='card third'>
+                    <h3>Gestor de tareas</h3>
+                    <p>Una aplicación para gestionar tareas. Permite registrar usuarios con sus respectivas contraseñas y la seguridad adecuada para manejar estos datos y el login. Cada uno de ellos tiene una lista de tareas independiente. La versión de Java está hecha utilizando Spring.</p>
+                    <a class='red margin-right' target='_blank' href='https://github.com/Sergi-Lopez/todo_python'>Python</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='contacto' class='center padded coal section'>
+        <div class='content'>
+            <div class='row vert-pad'>
+                <div class='left padded card'>
+                    <h1>Contáctame</h1>
+                    <p>Si te ha convencido o llamado la atención algo de lo mostrado en este portfolio, ponte en contacto conmigo a través de este formulario.</p>
+                </div>
+                <div class='right padded'>
+                    <form class='contact-form' method='post' action='{{ url_for('portfolio.mail') }}'>
+                        <input name='name' placeholder='Nombre' required />
+                        <input name='email' placeholder='Correo' required type='email'/>
+                        <textarea placeholder='Mensaje' name='message' required minlength=10></textarea>
+                        <button class='btn full-width'>Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="center full-width">
+            <div class="row">
+                <h3>Contáctame</h3>
+            </div>
+        </div>
+        <div class='center full-width'>
+            <div class='row'>
+                <p>O también puedes visitar mi linkedin.</p>
+            </div>
+        </div>
+        <div class="center full-width social-links">
+            <div class="row">
+                <a target="_blank" href="https://www.linkedin.com/in/sergilopezsanchez/">
+                    <img class="social" width="30" src="images/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/mail.js"></script>
+</body>
+</html>

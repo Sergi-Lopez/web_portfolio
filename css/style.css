@@ -1,0 +1,403 @@
+/* General adjustments */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Rufina', sans-serif;
+    background-color: #151716;
+}
+
+body {
+    margin: 0;
+    color: #dcdcdc;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #151716;
+    position: relative;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 24px;
+    color: #dcdcdc;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    text-decoration: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #dcdcdc;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    color: #C03F44;
+    text-decoration: none;
+}
+
+/* Sticky header */
+header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #151716;
+    z-index: 10;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Update for links in sticky header */
+header.sticky .logo {
+    font-size: 22px;
+}
+
+header.sticky nav ul li a {
+    padding: 10px 15px;
+}
+
+/* Smooth scroll */
+.scroll-to {
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    background: linear-gradient(135deg, #151716, #333);
+    padding: 50px 20px;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero .hero-content {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero h1 {
+    font-family: 'Rufina', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.hero p {
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 50px;
+}
+
+.left {
+    width: 600px;
+    align-self: center;
+}
+
+.right {
+    width: 600px;
+    align-self: center;
+}
+
+/* Buttons */
+.btn {
+    background-color: #C03F44;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #A22F39;
+    transform: scale(1.05);
+}
+
+a.btn {
+    color: #fff;
+}
+
+/* Centering utilities */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 1200px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Links */
+a {
+    transition: color 0.3s ease;
+    font-family: 'Rubik', sans-serif;
+    color: #dcdcdc;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.red {
+    color: #C03F44;
+}
+
+/* Cards */
+.card {
+    background-color: #1c1c1c;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    color: #dcdcdc;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.third {
+    width: 360px;
+    margin: 20px;
+}
+
+/* Forms */
+.contact-form input {
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+}
+
+.contact-form textarea {
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    height: 100px;
+    padding: 15px 10px;
+    resize: none;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    margin-bottom: 15px;
+}
+
+/* Full width utility */
+.full-width {
+    width: 100%;
+}
+
+/* Lists */
+
+ul {
+    list-style: none;
+    margin: 0;
+    margin-right: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+    border-top: solid #444545;
+    padding: 80px 0 0 0;
+    background-color: #151716;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: #dcdcdc;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* Section styling */
+.coal {
+    background-color: #151716;
+}
+
+.light-coal {
+    background-color: #151716;
+}
+
+.margin-right {
+    margin-right: 20px;
+}
+
+.more-margin-right {
+    margin-right: 150px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+/* Paddings */
+.padded {
+    padding: 20px 30px;
+}
+
+.hor-pad {
+    padding: 0 30px;
+}
+
+.vert-pad {
+    padding: 30px 0;
+}
+
+/* Animations */
+a.scroll-to:hover {
+    text-decoration: none;
+    transition: text-decoration 0.3s ease-in-out;
+}
+
+/* General responsive adjustments */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .hero-content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .right img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* General content adjustments */
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Header */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px 10px;
+    }
+
+    /* Contact form */
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    /* Proyectos section */
+    .third {
+        width: 100%;
+    }
+
+    /* Lists */
+    ul {
+        padding: 0;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .right img {
+        max-width: 250px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .padded {
+        padding: 10px;
+    }
+}
