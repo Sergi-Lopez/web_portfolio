@@ -112,7 +112,8 @@
             <div class='row'>
                 <div class='card third'>
                     <h3>Portfolio</h3>
-                    <p>Esta misma pagina web, desarrollada completamente utilizando python con Flask y html y css. Además utiliza la api de Sendgrid para manejar los correos de contacto.</p>
+                    <p>Dos versiones, la actual, hecha con html, css y utilizando un servicio como formspree para manejar los correos y una versión web app hecha con python, flask y la api de sendgrid para mandar correos.</p>
+                    <a class='red' target='_blank' href='https://github.com/Sergi-Lopez/web_portfolio'>Web actual</a>
                     <a class='red' target='_blank' href='https://github.com/Sergi-Lopez/web'>Python</a>
                 </div>
                 <div class='card third'>
@@ -138,7 +139,7 @@
                     <p>Si te ha convencido o llamado la atención algo de lo mostrado en este portfolio, ponte en contacto conmigo a través de este formulario.</p>
                 </div>
                 <div class='right padded'>
-                    <form class='contact-form' method='post' action='{{ url_for('portfolio.mail') }}'>
+                    <form class='contact-form' method='post' action="https://formspree.io/f/manqnvlw">
                         <input name='name' placeholder='Nombre' required />
                         <input name='email' placeholder='Correo' required type='email'/>
                         <textarea placeholder='Mensaje' name='message' required minlength=10></textarea>
@@ -169,6 +170,7 @@
         </div>
     </footer>
 
+    <script src="dist/bundle.js"></script>
     <script src="js/mail.js"></script>
 </body>
 </html>
